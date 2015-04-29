@@ -13,7 +13,7 @@ app.get('/', function (req, res, next) {
 			}
 			var $ = cheerio.load(sres.text);
 			var items = [];
-			items.push[{version:1.0.0}];
+			items.push({version:1.0.0});
 			$("a.topic_title").each(function(i, element){
 				items.push({
 					'href' : $(element).attr('href'),
